@@ -1,1 +1,4 @@
-.class
+*.class
+*/gen/*
+*/lint.xml
+*/bin/*

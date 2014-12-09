@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.helloandroid"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Welcome"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		 <activity android:name=".MakeEntry"></activity> 
+		<activity android:name=".ViewAllRecords"></activity> 
+		<activity android:name=".SearchByName"></activity> 
+		<activity android:name=".ShowEntriesForName"></activity> 
+		<activity android:name=".SettleAccount"></activity> 
+		<activity android:name=".PurgeRecords"></activity> 
+		<activity android:name=".HelloAndroid"></activity> 
+		<activity android:name=".EditEntry"></activity> 
+		<activity android:name=".DisplayCredits"></activity>
+		<activity android:name=".ViewSummary"></activity>
+		<receiver android:name="ATAppWidgetProvider" >
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		         <action android:name="com.example.helloandroid.ATAppWidgetProvider.ACTION_WIDGET_REFRESH"/>
+		         <action android:name="com.example.helloandroid.ATAppWidgetProvider.ACTION_WIDGET_NEXT"/>
+		         <action android:name="com.example.helloandroid.ATAppWidgetProvider.ACTION_WIDGET_PREVIOUS"/>
+		    </intent-filter>
+	    	<meta-data android:name="android.appwidget.provider"
+	               android:resource="@xml/at_appwidget_info" />
+	    </receiver>
+	    <service android:name=".ATAppWidgetProvider$UpdateService" />
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+</manifest> 

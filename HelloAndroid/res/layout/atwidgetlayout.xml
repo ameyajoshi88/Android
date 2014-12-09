@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:orientation="vertical"
+	android:layout_width="fill_parent"    
+	android:layout_height="wrap_content"
+	android:background="@drawable/bgw"
+	android:gravity="center_horizontal"
+	android:id="@+id/widLinLayout">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"    
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:id="@+id/widBtnLinLayout">
+		<Button
+	        android:id="@+id/prevButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/back"
+	        />
+	    <TextView
+			android:id="@+id/t1"        
+			android:layout_width="30px"        
+			android:layout_height="wrap_content"      
+			/>    	
+		<Button
+	        android:id="@+id/refresh"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/refresh"/>
+	    <TextView
+			android:id="@+id/t2"        
+			android:layout_width="30px"        
+			android:layout_height="wrap_content"      
+			/>     	
+		<Button
+	        android:id="@+id/nxtButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/next"
+	        /> 	 
+	</LinearLayout>
+	<TextView android:id="@+id/widSeparator1" 
+		android:layout_width="fill_parent"
+		android:layout_height="10dip"/>	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"    
+	android:layout_height="30dp"
+	android:gravity="center"
+	android:background="#2EFFFFFF"
+	android:id="@+id/widBgLinLayout">
+		<TextView
+		android:id="@+id/wid0"        
+		android:layout_width="wrap_content"        
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"      
+		android:text="Account Summary"
+		android:textStyle="bold"/>
+	</LinearLayout>
+	<TextView android:id="@+id/widSeparator" 
+		android:layout_height="5dip"
+		android:layout_width="fill_parent"
+		/>	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+		android:layout_width="fill_parent"    
+		android:layout_height="wrap_content"
+		android:id="@+id/widRelLayout">    
+			<TextView
+			android:id="@+id/wid2"        
+			android:layout_width="wrap_content"        
+			android:layout_height="wrap_content"
+			android:text="|" 
+			android:layout_centerHorizontal="true"
+			/>
+			<TextView
+			android:id="@+id/wid1"        
+			android:layout_width="0dp"	        
+			android:layout_height="wrap_content"       
+			android:text="Name"
+			android:gravity="left"
+			android:layout_alignRight="@id/wid2"
+			android:layout_alignParentLeft="true"
+			/>
+			<TextView
+			android:id="@+id/wid3"        
+			android:layout_width="0dp"        
+			android:layout_height="wrap_content"     
+			android:text="Status"
+			android:gravity="right"
+			android:layout_alignLeft="@id/wid2"
+			android:layout_alignParentRight="true"
+			/>
+	</RelativeLayout>
+	<TextView android:id="@+id/widSeparator" 
+		android:layout_height="2dip"
+		android:layout_width="fill_parent"
+		android:background="#FF909090" />
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+		android:orientation="vertical"
+		android:layout_width="fill_parent"    
+		android:layout_height="fill_parent"
+		android:gravity="center_horizontal"
+		android:id="@+id/widParLinLayout">
+	</LinearLayout>
+</LinearLayout>	
