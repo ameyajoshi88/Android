@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:orientation="vertical"
+	android:layout_width="fill_parent"    
+	android:layout_height="fill_parent" 
+	android:background="@drawable/bg"
+	android:layout_gravity="center">    
+<TextView        
+	android:id="@+id/label1"        
+	android:layout_width="fill_parent"        
+	android:layout_height="wrap_content" 
+	android:gravity="center"      
+	android:text="Welcome to Kuber ForEx"/>    
+<Button        
+	android:id="@+id/make"               
+	android:layout_width="200px"      
+	android:layout_height="10px" 
+	android:layout_gravity="center"
+	android:drawableLeft="@drawable/entry2"
+	android:gravity="center_vertical|center"   
+	android:layout_weight="1"            
+	android:text="Make an Entry" />   
+<Button        
+	android:id="@+id/view"        
+	android:layout_width="200px"        
+	android:layout_height="10px" 
+	android:layout_gravity="center"
+	android:drawableLeft="@drawable/view1"  
+	android:gravity="center_vertical|center"        
+	android:layout_weight="1"        
+	android:text="View All Entries" />    
+<Button   
+	android:id="@+id/search"       
+	android:layout_width="200px"        
+	android:layout_height="10px" 
+	android:layout_gravity="center"
+	android:drawableLeft="@drawable/search1"   
+	android:gravity="center_vertical|center"       
+	android:layout_weight="1"               
+	android:text="Search" />
+<Button   
+	android:id="@+id/settle"       
+	android:layout_width="200px"        
+	android:layout_height="10px"    
+	android:layout_gravity="center"
+	android:drawableLeft="@drawable/settle1"   
+	android:gravity="center_vertical|center"    
+	android:layout_weight="1"               
+	android:text="Settle Account" />
+<Button   
+	android:id="@+id/summary"       
+	android:layout_width="200px"        
+	android:layout_height="10px"    
+	android:layout_gravity="center"
+	android:drawableLeft="@drawable/summary"   
+	android:gravity="center_vertical|center"    
+	android:layout_weight="1"               
+	android:text="Summary" />
+<Button   
+	android:id="@+id/credits"       
+	android:layout_width="200px"        
+	android:layout_height="10px"  
+	android:layout_gravity="center"
+	android:drawableLeft="@drawable/credits" 
+	android:gravity="center_vertical|center"        
+	android:layout_weight="1"               
+	android:text="Credits" />
+</LinearLayout>
+
